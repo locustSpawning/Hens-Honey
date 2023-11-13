@@ -90,6 +90,7 @@ select {
     --clr-hot-pink: #f8527d;
     --clr-medium-pink: #f98b9f;
     --clr-mobile-menu: #f5b3bf;
+    --clr-link-hover: #ddb7c2;
 
     --fw-regular: 400;
     --fw-semi-bold: 500;
@@ -175,6 +176,10 @@ a:visited {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--clr-link-hover);
+}
+
 /* Header Large */
 
 #hibiscus-icon {
@@ -187,6 +192,18 @@ a:visited {
     display: flex;
 }
 
+.header {
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--clr-header);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
+}
+
 #nav-list {
     gap: 2em;
+}
+
+.current-page {
+    font-weight: var(--fw-bold);
+    color: var(--clr-hot-pink);
 }
