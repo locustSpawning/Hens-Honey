@@ -10,7 +10,7 @@ My goal is to restructure thier website so that the information architecture is 
 
 # Photos | Icons by:
 
-Iconify
-Hens & Honey Shoppe
+Iconify |
+Hens & Honey Shoppe |
 
 🌺 · 🐣 · 🌷 · 🍯 · 🐮 · 🌺
