@@ -198,10 +198,13 @@ a:hover {
     align-items: center;
     background-color: var(--clr-header);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
+    padding: 0.5em 0 0.5em;
+    gap: 20em;
 }
 
 #nav-list {
     gap: 2em;
+    margin: 0;
 }
 
 .current-page {
@@ -213,10 +216,49 @@ a:hover {
 
 .footer {
     background-color: var(--clr-background-dark);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 .icon-name-footer {
     display: flex;
     gap: 1em;
     align-items: center;
+}
+
+.footer-nav {
+    color: white;
+}
+
+#left-side-footer,
+#footer-right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+#addresses {
+    margin-left: 3.5em;
+    margin-top: 2em;
+}
+
+#coffee-address {
+    margin-bottom: 3em;
+}
+
+#footer-fb-insta {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+    margin-top: 2.3em;
+}
+
+#footer-right-side {
+    align-items: end;
+}
+
+#credits {
+    margin-top: 3.2em;
+    margin-bottom: 0.5em;
 }
