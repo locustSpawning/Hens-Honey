@@ -184,8 +184,14 @@ a:hover {
 /* Header */
 
 .hibiscus-icon {
-    height: 40px;
-    width: 40px;
+    max-height: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+}
+
+#header-icon-flower {
+    width: 361px;
 }
 
 .header,
@@ -199,7 +205,6 @@ a:hover {
     background-color: var(--clr-header);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
     padding: 0.5em 0 0.5em;
-    gap: 20em;
 }
 
 #nav-list {
@@ -230,6 +235,7 @@ a:hover {
 
 .footer-nav {
     color: white;
+    margin-top: 0.5em;
 }
 
 #left-side-footer,
@@ -260,5 +266,4 @@ a:hover {
 
 #credits {
     margin-top: 3.2em;
-    margin-bottom: 0.5em;
 }
