@@ -75,11 +75,11 @@ select {
     }
 }
 
-/* HENS AND HONEY SPECIFICS START HERE */
+/*------- HENS AND HONEY SPECIFICS START HERE --------- */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
-/*Variables */
+/* ------------- Variables ----------------- */
 :root {
     --clr-text: #261d20;
     --clr-background: #fff2f5;
@@ -105,7 +105,7 @@ select {
     --fs-200: 0.875rem; /*14px*/
 }
 
-/* Utility Classes */
+/* ------------- Utility Classes ------------- */
 
 .text-main-dark {
     color: var(--clr-title-text-light);
@@ -181,7 +181,7 @@ a:hover {
     color: var(--clr-link-hover);
 }
 
-/* Header */
+/* ----------- Header ------------- */
 
 .hibiscus-icon {
     max-height: 40px;
@@ -220,10 +220,11 @@ a:hover {
     color: var(--clr-hot-pink);
 }
 
-/*Footer */
+/* -------------- Footer ----------------- */
 
 .footer,
-.footer-tablet {
+.footer-tablet,
+.footer-mobile {
     background-color: var(--clr-background-dark);
     display: flex;
     padding-top: 1.5em;
@@ -285,11 +286,14 @@ a:hover {
     color: var(--clr-hot-pink);
 }
 
-/* --------- MEDIA QUERIES ---------- */
-
-/* Footer -- TABLET*/
+/* --------  Footer -- TABLET ------------ */
 
 .footer-tablet {
+    display: none;
+}
+
+.footer-tablet,
+.footer-mobile {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -315,8 +319,52 @@ a:hover {
     gap: 3em;
 }
 
-@media screen and (max-width: 809px) {
+/*------------ Footer -- MOBILE ------------- */
+
+.footer-mobile {
+    display: none;
+}
+
+.icon-name-footer-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#addresses-mobile {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.hibiscus-icon-mobile {
+    max-height: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+}
+
+/* --------- MEDIA QUERIES ---------- */
+
+@media screen and (max-width: 815px) {
     .footer {
-        flex-direction: column;
+        display: none;
+    }
+    .footer-tablet {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .footer-tablet {
+        display: none;
+    }
+    .footer-mobile {
+        display: flex;
     }
 }
