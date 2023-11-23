@@ -195,7 +195,8 @@ a:hover {
 }
 
 .header,
-#nav-list {
+#nav-list,
+#nav-list-tablet {
     display: flex;
 }
 
@@ -207,9 +208,11 @@ a:hover {
     padding: 0.5em 0 0.5em;
 }
 
-#nav-list {
+#nav-list,
+#nav-list-tablet {
     gap: 2em;
     margin: 0;
+    padding: 0;
 }
 
 .current-page {
@@ -219,12 +222,16 @@ a:hover {
 
 /*Footer */
 
-.footer {
+.footer,
+.footer-tablet {
     background-color: var(--clr-background-dark);
     display: flex;
-    justify-content: space-around;
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+}
+
+.footer {
+    justify-content: space-around;
 }
 
 .icon-name-footer {
@@ -253,6 +260,12 @@ a:hover {
     margin-bottom: 3em;
 }
 
+.fb-link:hover,
+.insta-link:hover {
+    filter: invert(54%) sepia(72%) saturate(3716%) hue-rotate(314deg)
+        brightness(98%) contrast(98%);
+}
+
 #footer-fb-insta {
     display: flex;
     gap: 2em;
@@ -266,4 +279,44 @@ a:hover {
 
 #credits {
     margin-top: 3.2em;
+}
+
+.footer-link-hover-text:hover {
+    color: var(--clr-hot-pink);
+}
+
+/* --------- MEDIA QUERIES ---------- */
+
+/* Footer -- TABLET*/
+
+.footer-tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#nav-list-tablet {
+    margin: 2em 0 2em;
+}
+
+#coffee-shop-fb-div,
+#boutique-shop-insta-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 3em;
+}
+
+#address-socials-tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+@media screen and (max-width: 809px) {
+    .footer {
+        flex-direction: column;
+    }
 }
