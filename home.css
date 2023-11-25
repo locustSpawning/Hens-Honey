@@ -145,6 +145,7 @@
     align-items: center;
     align-content: center;
     padding: 5em;
+    text-align: center;
 }
 
 #cow-and-flowers-tablet {
@@ -164,5 +165,17 @@
     #coffee-shoppe-section,
     #boutique-shoppe-section {
         padding: 2em;
+    }
+}
+
+@media (max-width: 33em) {
+    #coffee-flights-info ul {
+        padding: 0;
+    }
+    #coffee-flights-info h1 {
+        text-align: center;
+    }
+    #follow-me {
+        text-align: center;
     }
 }
