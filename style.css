@@ -34,9 +34,11 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
+    height: 100vh;
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    background-color: var(--clr-background);
 }
 
 /* A elements that don't have a class get default styles */
@@ -108,15 +110,27 @@ select {
 /* ------------- Utility Classes ------------- */
 
 .text-main-dark {
-    color: var(--clr-title-text-light);
+    color: var(--clr-text);
     font-weight: var(--fw-regular);
     font-size: var(--fs-400);
 }
 
-.text-main-dark-bold {
-    color: var(--clr-title-text-light);
+.text-main-dark-bold-small {
+    color: var(--clr-text);
     font-weight: var(--fw-bold);
     font-size: var(--fs-400);
+}
+
+.text-main-dark-bold {
+    color: var(--clr-text);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-500);
+}
+
+.text-main-title-dark-bold {
+    color: var(--clr-text);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
 }
 
 .text-main-light {
@@ -128,13 +142,39 @@ select {
 .text-main-light-bold {
     color: var(--clr-text-color-pinkish);
     font-weight: var(--fw-bold);
+    font-size: var(--fs-500);
+}
+
+.text-main-title-light-bold {
+    color: var(--clr-text-color-pinkish);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-600);
+}
+
+.lightpink--ital {
+    color: var(--clr-text-color-pinkish);
+    font-weight: var(--fw-regular);
     font-size: var(--fs-400);
+    font-style: italic;
+}
+
+.title-text {
+    color: var(--clr-light-cocoa);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-600);
 }
 
 .subheading {
     color: var(--clr-title-text-light);
     font-weight: var(--fw-regular);
-    font-size: var(--fs-400);
+    font-size: var(--fs-500);
+}
+
+.subheading-ital {
+    color: var(--clr-title-text-light);
+    font-weight: 300;
+    font-size: var(--fs-500);
+    font-style: italic;
 }
 
 .shoppe-title-dark {
@@ -156,9 +196,9 @@ select {
 }
 
 .valerie-title-pink {
-    color: var(--clr-hot-pink);
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-500);
+    color: var(--clr-medium-pink);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-600);
 }
 
 .footer-text {
@@ -172,6 +212,8 @@ select {
     font-weight: var(--fw-regular);
     font-size: var(--fs-300);
 }
+
+/* -------------------------------------- */
 
 * {
     font-family: 'Poppins', sans-serif;

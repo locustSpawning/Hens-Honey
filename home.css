@@ -1,0 +1,133 @@
+/* ------- HOME PAGE ------- */
+
+#hero-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#cow-and-flowers {
+    height: 350px;
+}
+
+#both-shop-hours {
+    display: flex;
+    justify-content: center;
+}
+
+#coffee-shoppe-section,
+#boutique-shoppe-section {
+    padding: 5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#coffee-shoppe-section:hover,
+#boutique-shoppe-section:hover {
+    outline: none;
+    border-color: white;
+}
+
+#coffee-shoppe-section:hover {
+    box-shadow: inset 0 0 50px #918689;
+}
+
+#boutique-shoppe-section:hover {
+    box-shadow: inset 0 0 50px #fff0f0;
+}
+
+#coffee-shoppe-section,
+#coffee-flights-info {
+    background-image: linear-gradient(#4a4345, var(--clr-light-cocoa));
+}
+
+#boutique-shoppe-section {
+    background-image: linear-gradient(#ffd8d8, #d7b4b4);
+}
+
+.padding {
+    padding: 0.3em;
+}
+
+.extra-space {
+    margin-top: 1.5em;
+}
+
+#coffee-shop-hours,
+#boutique-shop-hours {
+    text-align: left;
+}
+
+#flights-image {
+    border-top: solid var(--clr-text-color-pinkish);
+    border-bottom: solid var(--clr-text-color-pinkish);
+    background-image: url('images/Hens&honeyFLIGHTS.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#coffee-flights-info {
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid var(--clr-text-color-pinkish);
+}
+
+#align-flights-info {
+    align-self: center;
+}
+
+#farm-image {
+    background-image: url('images/Hens&HoneyHome.jpg');
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hello-from-valerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+#hello-paragraph-homepage {
+    max-width: 750px;
+    margin-bottom: 2em;
+}
+
+#socials-homepage {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+#home-page-fb,
+#home-page-insta {
+    height: 75px;
+    width: 75px;
+}
+
+#home-page-fb:hover,
+#home-page-insta:hover {
+    filter: invert(54%) sepia(72%) saturate(3716%) hue-rotate(314deg)
+        brightness(98%) contrast(98%);
+}
