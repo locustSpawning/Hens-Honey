@@ -12,8 +12,8 @@
 }
 
 #products-hero-text {
-    max-width: 900px;
-    margin: 2em 0 10em;
+    max-width: 1200px;
+    margin-top: 2em;
     line-height: 1.9;
 }
 
@@ -21,32 +21,47 @@
 
 .product-image-left-desktop {
     max-height: 900px;
-    min-width: 1200px;
-    transform: translateX(-5%);
+    /* transform: translateX(-0.5%); */
     border-radius: 80px;
 }
 
-#product-1-desktop {
-    display: flex;
-    align-items: center;
+.product-image-right-desktop {
+    max-height: 900px;
+    /* transform: translateX(0.5%); */
+    border-radius: 80px;
 }
 
-.product-description-right-desktop {
-    margin-right: 12em;
+#product-1-desktop,
+#product-2-desktop,
+#product-3-desktop,
+#product-4-desktop {
+    display: flex;
+    align-items: center;
+    margin: 8em 25em 0;
+    gap: 10em;
+}
+
+.product-description-right-desktop,
+.product-description-left-desktop {
     line-height: 2;
 }
 
 /* ------------- TABLET --------------- */
 
-#product-1-tablet {
+#product-1-tablet,
+#product-2-tablet,
+#product-3-tablet,
+#product-4-tablet {
     display: none;
     align-items: center;
+    margin-top: 8em;
 }
 
 .product-image-left-tablet {
     max-height: 810px;
-    transform: translateX(-20%);
-    border-radius: 100px;
+    max-width: 690px;
+    transform: translateX(-10%);
+    border-radius: 0 100px 100px 0;
 }
 
 .product-description-right-tablet {
@@ -54,14 +69,30 @@
     line-height: 2;
 }
 
+.product-image-right-tablet {
+    max-height: 810px;
+    max-width: 690px;
+    transform: translateX(10%);
+    border-radius: 100px 0 0 100px;
+}
+
+.product-description-left-tablet {
+    margin-left: 6em;
+    line-height: 2;
+}
+
 /* ------------- MOBILE --------------- */
 
-#product-1-mobile {
-    display: flex;
+#product-1-mobile,
+#product-2-mobile,
+#product-3-mobile,
+#product-4-mobile {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-top: 4em;
 }
 
 .product-image-mobile {
@@ -76,29 +107,48 @@
 
 /* ------------- sCREEN SIZES --------------- */
 
-@media (max-width: 125em) {
-    #product-1-desktop {
+@media (max-width: 120em) {
+    #product-1-desktop,
+    #product-2-desktop,
+    #product-3-desktop,
+    #product-4-desktop {
         display: none;
     }
-    #product-1-tablet {
+    #product-1-tablet,
+    #product-2-tablet,
+    #product-3-tablet,
+    #product-4-tablet {
         display: flex;
     }
-    #product-1-mobile {
-        display: none;
+
+    #products-hero-text {
+        max-width: 900px;
     }
 }
 
-@media (max-width: 62em) {
-    #product-1-tablet {
+@media (max-width: 60em) {
+    #product-1-tablet,
+    #product-2-tablet,
+    #product-3-tablet,
+    #product-4-tablet {
         display: none;
     }
-    #product-1-mobile {
+    #product-1-mobile,
+    #product-2-mobile,
+    #product-3-mobile,
+    #product-4-mobile {
         display: flex;
+    }
+    #products-hero-text {
+        max-width: 300px;
     }
 }
 
-@media (min-width: 63em) {
-    #product-1-mobile {
+/* @media (min-width: 63em) {
+    #product-1-mobile,
+    #product-2-mobile,
+    #product-3-mobile,
+    #product-4-mobile {
         display: none;
     }
-}
+} */
