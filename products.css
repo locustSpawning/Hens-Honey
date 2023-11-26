@@ -105,7 +105,38 @@
     line-height: 1.7;
 }
 
-/* ------------- sCREEN SIZES --------------- */
+/* ------------- Theres more --------------- */
+
+#but-wait-theres-more,
+#but-wait-theres-more-mobile {
+    padding: 5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: solid var(--clr-text-color-pinkish); */
+    background-image: linear-gradient(#4a4345, var(--clr-light-cocoa));
+    margin-top: 8em;
+}
+
+#but-wait-theres-more {
+    display: flex;
+}
+
+#but-wait-theres-more-mobile {
+    display: none;
+}
+
+#align-info,
+#align-info-mobile {
+    align-self: center;
+}
+
+#stop-and-visit,
+#stop-and-visit-mobile {
+    padding-top: 30px;
+}
+
+/* ------------- sCREEN SIZES--------------- */
 
 @media (max-width: 120em) {
     #product-1-desktop,
@@ -130,25 +161,18 @@
     #product-1-tablet,
     #product-2-tablet,
     #product-3-tablet,
-    #product-4-tablet {
+    #product-4-tablet,
+    #but-wait-theres-more {
         display: none;
     }
     #product-1-mobile,
     #product-2-mobile,
     #product-3-mobile,
-    #product-4-mobile {
+    #product-4-mobile,
+    #but-wait-theres-more-mobile {
         display: flex;
     }
     #products-hero-text {
         max-width: 300px;
     }
 }
-
-/* @media (min-width: 63em) {
-    #product-1-mobile,
-    #product-2-mobile,
-    #product-3-mobile,
-    #product-4-mobile {
-        display: none;
-    }
-} */
