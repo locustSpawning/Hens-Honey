@@ -315,6 +315,20 @@ a:hover {
     padding-left: 4em;
 }
 
+/* -------------- Elements on MOST pages ----------------- */
+
+.pages-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3em;
+}
+
+.page-title {
+    padding-bottom: 1.5em;
+}
+
 /* -------------- Footer ----------------- */
 
 .footer,

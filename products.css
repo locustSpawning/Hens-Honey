@@ -1,0 +1,104 @@
+/*  ------- PRODUCTS PAGE -------- */
+
+#products-image-hero {
+    border-top: solid var(--clr-text-color-pinkish);
+    border-bottom: solid var(--clr-text-color-pinkish);
+    background-image: url('images/Hens&HoneyCookingOIl.jpg');
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#products-hero-text {
+    max-width: 900px;
+    margin: 2em 0 10em;
+    line-height: 1.9;
+}
+
+/* ------------- DESKTOP --------------- */
+
+.product-image-left-desktop {
+    max-height: 900px;
+    min-width: 1200px;
+    transform: translateX(-5%);
+    border-radius: 80px;
+}
+
+#product-1-desktop {
+    display: flex;
+    align-items: center;
+}
+
+.product-description-right-desktop {
+    margin-right: 12em;
+    line-height: 2;
+}
+
+/* ------------- TABLET --------------- */
+
+#product-1-tablet {
+    display: none;
+    align-items: center;
+}
+
+.product-image-left-tablet {
+    max-height: 810px;
+    transform: translateX(-20%);
+    border-radius: 100px;
+}
+
+.product-description-right-tablet {
+    margin-right: 6em;
+    line-height: 2;
+}
+
+/* ------------- MOBILE --------------- */
+
+#product-1-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.product-image-mobile {
+    border-radius: 600px;
+}
+
+.product-description-mobile {
+    max-width: 300px;
+    margin: 2em 0 2em;
+    line-height: 1.7;
+}
+
+/* ------------- sCREEN SIZES --------------- */
+
+@media (max-width: 125em) {
+    #product-1-desktop {
+        display: none;
+    }
+    #product-1-tablet {
+        display: flex;
+    }
+    #product-1-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 62em) {
+    #product-1-tablet {
+        display: none;
+    }
+    #product-1-mobile {
+        display: flex;
+    }
+}
+
+@media (min-width: 63em) {
+    #product-1-mobile {
+        display: none;
+    }
+}
