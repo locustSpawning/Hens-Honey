@@ -136,6 +136,13 @@
     padding-top: 30px;
 }
 
+#mug-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #030000;
+}
+
 /* ------------- sCREEN SIZES--------------- */
 
 @media (max-width: 120em) {
