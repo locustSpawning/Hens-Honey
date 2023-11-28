@@ -329,6 +329,10 @@ a:hover {
     padding-bottom: 1.5em;
 }
 
+#social-link {
+    color: var(--clr-hot-pink);
+}
+
 /* -------------- Footer ----------------- */
 
 .footer,
