@@ -1,11 +1,12 @@
 /* GALLERY PAGE */
 
-.image-row {
+.gallery-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 5em 8em 5em;
-    gap: 6em;
+    gap: 2rem;
+    margin: 0 4em 0;
 }
 
 .gallery-photo {
@@ -23,4 +24,10 @@
 #follow-insta {
     text-align: center;
     margin: 4em 0 4em;
+}
+
+@media (min-width: 110em) {
+    .gallery-container {
+        margin: 0 24em 0;
+    }
 }
