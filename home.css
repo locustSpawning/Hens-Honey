@@ -158,3 +158,47 @@
         text-align: center;
     }
 }
+
+/*  ------------------ CREDITS PAGE -------------------- */
+
+#credits-info-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    min-height: calc(100vh - 300px);
+}
+
+#credits-container {
+    background-color: var(--clr-light-cocoa);
+    border-radius: 10px;
+    padding: 3em;
+    max-width: 1300px;
+    padding: 8em;
+}
+
+#credits-container > h1 {
+    margin-bottom: 2em;
+}
+
+#iconify-link {
+    color: var(--clr-text-color-pinkish);
+}
+#iconify-link:hover {
+    color: var(--clr-hot-pink);
+}
+
+@media (max-width: 38em) {
+    #credits-container {
+        padding: 2em !important;
+    }
+    #credits-container > h1 {
+        font-size: var(--fs-400);
+    }
+}
+
+@media (max-width: 50em) {
+    #credits-container {
+        padding: 5em;
+    }
+}
