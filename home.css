@@ -60,10 +60,6 @@
     padding: 0.3em;
 }
 
-.extra-space {
-    margin-top: 1.5em;
-}
-
 #coffee-shop-hours,
 #boutique-shop-hours {
     text-align: left;
@@ -118,24 +114,6 @@
     max-width: 750px;
     margin-bottom: 2em;
     line-height: 1.9;
-}
-
-#socials-homepage {
-    display: flex;
-    justify-content: center;
-    gap: 3em;
-}
-
-#home-page-fb,
-#home-page-insta {
-    height: 75px;
-    width: 75px;
-}
-
-#home-page-fb:hover,
-#home-page-insta:hover {
-    filter: invert(54%) sepia(72%) saturate(3716%) hue-rotate(314deg)
-        brightness(98%) contrast(98%);
 }
 
 /* ------------- MEDIA QUERIES ------------- */

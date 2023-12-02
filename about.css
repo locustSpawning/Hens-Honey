@@ -1,0 +1,65 @@
+/* ABOUT PAGE */
+
+.about-info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+.center-info {
+    max-width: 1160px;
+    margin-top: 3em;
+}
+
+#second-paragraph-our-shoppes,
+#third-paragraph-our-shoppes {
+    margin-top: 3em;
+}
+
+#hens-honey-coffee-beans,
+#farm-photo,
+#food-tray {
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hens-honey-coffee-beans {
+    background-image: url('images/hens&honeypasta.jpg');
+}
+
+#farm-photo {
+    background-image: url('images/Hens&HOneyPorch.jpg');
+}
+
+#food-tray {
+    background-image: url('images/Hens&HoneyTray.jpg');
+}
+
+.thank-you {
+    text-align: center;
+}
+
+.end-section-margin {
+    margin-bottom: 5em;
+}
+
+@media (max-width: 100em) {
+    .center-info {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 80em) {
+    .about-info-section {
+        margin: 0 5em 5em;
+    }
+    .about-title {
+        text-align: center;
+    }
+}
