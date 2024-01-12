@@ -15,6 +15,7 @@
     min-width: 300px;
     min-height: 300px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .gallery-photo:hover {

@@ -63,3 +63,12 @@
         text-align: center;
     }
 }
+
+@media (max-width: 33em) {
+    .about-info-section {
+        margin: 0 3em 5em;
+    }
+    .about-title {
+        text-align: center;
+    }
+}

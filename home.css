@@ -148,6 +148,9 @@
 }
 
 @media (max-width: 33em) {
+    #hero-home-tablet {
+        padding: 3em;
+    }
     #coffee-flights-info ul {
         padding: 0;
     }
