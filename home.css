@@ -160,6 +160,12 @@
     #follow-me {
         text-align: center;
     }
+    #hello-from-valerie,
+    #coffee-flights-info,
+    #coffee-shoppe-section,
+    #boutique-shoppe-section {
+        padding: 4em 3em 4em;
+    }
 }
 
 /*  ------------------ CREDITS PAGE -------------------- */
